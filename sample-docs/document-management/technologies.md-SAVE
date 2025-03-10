@@ -1,0 +1,63 @@
+---
+title: What technologies are in use?
+---
+
+# How does this technology stack work?
+
+## How do we write documents?
+
+We write documents in Markdown using a directory hierarchy to manage the structure. For the
+author this is all the is needed.
+
+Documents are in pretty much vanilla Markdown. Extensions can be applied if appropriate
+such as [Python Markdown Admonitions](https://python-markdown.github.io/extensions/admonition/)
+
+We also add a YAML "Fron matter" block at the top. The theme currently only uses the _Title_ value when rendering
+the navigation index
+
+!!! note "Python Markdown Admonitions"
+
+    This won't render correctly in VSCode without adding the `Markdown Extended` extension
+
+## And then how does it get processed?
+
+This is basically `mkdocs`. We can then lob it into a gitlab pipeline which deploys it
+(in the case of this demonstrator) to gitlab pages. the `.gitlab-ci.yml` is very simple for now, just running 
+mkdocs and marking the created html as an artifact. Some magic inside gitlab then moves the `public`
+directory from the pipeline artifacts and to the gitlab pages service.
+
+The source code for this page looks like this:
+
+```
+---
+title: What technologies are in use?
+---
+
+# How does this technology stack work?
+
+## How do we write documents?
+
+We write documents in Markdown using a directory hierarchy to manage the structure. For the
+author this is all the is needed.
+
+Documents are in pretty much vanilla Markdown. Extensions can be applied if appropriate
+such as [Python Markdown Admonitions](https://python-markdown.github.io/extensions/admonition/)
+
+We also add a YAML "Fron matter" block at the top. The theme currently only uses the _Title_ value when rendering
+the navigation index
+
+!!! note "Python Markdown Admonitions"
+
+    This won't render correctly in VSCode without adding the `Markdown Extended` extension
+
+## And then how does it get processed?
+
+This is basically `mkdocs`. We can then lob it into a gitlab pipeline which deploys it
+(in the case of this demonstrator) to gitlab pages. the `.gitlab-ci.yml` is very simple for now, just running 
+mkdocs and marking the created html as an artifact. Some magic inside gitlab then moves the `public`
+directory from the pipeline artifacts and to the gitlab pages service.
+
+The source code for this page looks like this:
+
+< and this source code block>
+```
