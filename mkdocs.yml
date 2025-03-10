@@ -3,3 +3,11 @@ site_url: 'https://dvavasour.gitlab.io/bell3/call-change-sim-docs'
 site_dir: 'public'
 docs_dir: 'docs'
 
+theme:
+  name: 'readthedocs'
+  navigation_depth: 2
+
+markdown_extensions:
+    - toc:
+        permalink: '#'
+    - admonition
