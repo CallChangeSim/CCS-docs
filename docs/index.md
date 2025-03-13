@@ -21,4 +21,5 @@ Point your browser at [https://callchangesim.co.uk](https://callchangesim.co.uk)
 
 Your browser must be able to run the Javascript code, and must have permissions to use the sound system on your phone or computer. This will normally be the case.
 
+In the navigation pane on the right you'll see "Getting Started". Select that link to make your first set of call changes.
 
