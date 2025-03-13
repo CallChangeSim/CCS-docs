@@ -10,7 +10,8 @@ draft: true
 Here's how to ring a short sequence of changes on Call Change Simulator, the simple "Queens and Back" sequence.
 
 1. Open the page [https://callchangesim.co.uk](https://callchangesim.co.uk) and leave everything at defaults. You should see this page. To understand the components of the display, refer to the page  
-`TODO: Need the mkdocs method for cross reference`  
+`TODO: Need the mkdocs method for cross reference`
+`TODO: Resize Pictures`  
 `TODO: Need to blur phone status stuff`
 
 ![Alt: Image of Front Page of Call Change Simulator](../png/1-Start_Screen.png)
