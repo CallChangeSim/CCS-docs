@@ -10,7 +10,7 @@ draft: true
 Here's how to ring a short sequence of changes on Call Change Simulator, the simple "Queens and Back" sequence.
 
 1. Open the page [https://callchangesim.co.uk](https://callchangesim.co.uk) and leave everything at defaults. You should see this page. To understand the components of the display, refer to the page [Controls](../../controls)  
-![Alt: Image of Front Page of Call Change Simulator](../png/CCS.png)  
+![Alt: Image of Front Page of Call Change Simulator](../png/CCS.png){ width=50% }  
 0. Press the Go button	
 	You'll notice that under the round numbers showing the current bell order it says `- Rounds -`. That's because the bells are, indeed, ringing rounds. Let's change that
 0. In the "Select Bells to Swap" box, press `2` followed by `3`. The following will happen:
