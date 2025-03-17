@@ -1,2 +1,9 @@
 site
 public
+
+
+*.drawio.bkp
+
+# Temporary while Dunstan is making a mess
+Screenshot*
+*.zip
