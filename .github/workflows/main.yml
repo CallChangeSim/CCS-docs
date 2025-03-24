@@ -30,4 +30,4 @@ jobs:
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: ${{ github.event.head_commit.message }}
           force_orphan: true
-          destination_dir: ${{ github.ref_name }}
+          destination_dir: gh-pages
