@@ -10,16 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
+
       - run: pip install mkdocs
       - run: pip install mkdocs-material
+
       - run: mkdocs build
-      - uses: actions/upload-artifact@v4
+
+      - uses: actions/upload-artifact@v2
         with:
           name: docs
-          path: docs
+          path: site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
